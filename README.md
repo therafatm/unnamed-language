@@ -1,17 +1,53 @@
-# Assignment 3
+# Unnamed-Language
 
-## How do you build this thing?
+Unnamed-Language is a simplistic java like language with very basic constructs.
+This code snippet is an example of `.ul` syntax. Checkout the `language-specs` 
+document for more detailed insight into the language and its capabilities.
 
-- Run `make`
-- You can use `make clean` to get rid of all the `object` and `class` files
+```
+// recursive function to solve the tower of hanoi puzzles
+void towersOfHanoi(int n, char fromRod, char toRod, char auxRod)
+{
+	if (n == 1)
+	{
+		print "Move disk 1 from rod ";
+		print fromRod;
+		print " to rod ";
+		println toRod;
+	}
+	else {
+		towersOfHanoi(n-1, fromRod, auxRod, toRod);
+		print "Move disk ";
+		print n;
+		print " from rod ";
+		print fromRod;
+		print " to rod ";
+		println toRod;
+		towersOfHanoi(n-1, auxRod, toRod, fromRod);
+	}
+}
 
-## Ok, I've built it. But where are the test files?
+void main() {
+    int n;
+	n = 4; // Number of disks
+	towersOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
+}
+```
 
-- All test files live in the `/tests` folder.
+## What did you use to build this?
 
-## Cool. Now show me how to run it.
+If you're reading this, you probably know that a compiler basically has two parts, a frontend and a backend.
+In general, the frontend takes care of parsing the input, checking syntax, and type validation, while the
+backend generates code for a specific target backend (which in our case was the [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)).
 
-Make sure you have a classpath sourced correctly for both ANTLR and Jasmin.
+This project is written in `java` and ANTLR. This project was a result of 4th year class at my university, and `java` was suggested as a possible development language, particularly because it interfaces well the with parsing tool (`ANTLR`) we used for this project. `ANTLR` is a language recognition tool, which was used extensively during the parsing and lexing phase of the compiler. `ANTLR` allowed me to parse the input, and create an [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree).
+
+This AST was core data structure used to output machine code for the JVM. In short, I implemented the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) (used extensively when building compilers) to traverse
+the AST, and output the appropriate JVM instructions. In a real life compiler, there would be significant optimizations applied within the IR, and final assembly generation phases (like reaching definition analysis, live variable analysis, constant propagation, etc), none of which have been implemented as part of this project, but would be one for the future. 
+
+## How do you run this thing?
+
+I don't know how to run this in windows sorry. But linux and mac should work. Make sure you have a classpath sourced correctly for both ANTLR and Jasmin. You'll have to edit the `setclasspath` file to point to this directory.
 
 Then:
 -  `make`
