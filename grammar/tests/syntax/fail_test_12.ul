@@ -1,0 +1,9 @@
+int sampleOne (int x, float y) {
+	if (x<y) {
+		funtioncall(param1, );
+ 	} else {
+		print "Goodbye";
+ 	}
+ 	return x*y;
+}
+

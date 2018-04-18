@@ -1,0 +1,10 @@
+//tests character initialization
+int sampleOne (int x, float y) {
+	if (x<y) {
+		 print " ";
+ 	} else {
+		int i;
+		print "Goodbye";
+ 	}
+ 	return x*y;
+}

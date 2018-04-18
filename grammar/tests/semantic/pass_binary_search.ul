@@ -1,0 +1,32 @@
+int binarySearch (int[4] array, int target){
+	int low;
+	int high;
+	float mid;
+	
+	low = 0;
+	high = 3;
+	while (low < high) {
+		mid = (high - low) * 0.5;
+		if (array[mid] == target) {
+			return mid;
+		}
+		if (array[mid] < target) {
+			low = mid + 1;
+		} else {
+			high = mid - 1;			
+		}
+	}
+}
+
+void main(){
+	int[4] array;
+	int count;
+
+	//initialize array
+	count = 4;	
+	while (0 < count) {
+		array [count] = count;
+	}
+
+	binarySearch(array, 3);
+}

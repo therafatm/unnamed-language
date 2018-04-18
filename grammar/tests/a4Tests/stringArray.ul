@@ -1,0 +1,16 @@
+void main()
+{
+	string [10] s_array;
+    string a;
+    string b;
+    boolean c;
+
+	s_array[1] = "hey";
+	s_array[2] = " there";
+
+    a = s_array[1] + s_array[2];
+    println a;
+    b = s_array[2];
+    println b;
+    println s_array[1] == s_array[2];
+}

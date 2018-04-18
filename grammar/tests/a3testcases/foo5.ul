@@ -1,0 +1,9 @@
+float foo (float x, float y)
+{
+	return x + y;
+}
+
+void main ()
+{
+	println foo(2,3);
+}

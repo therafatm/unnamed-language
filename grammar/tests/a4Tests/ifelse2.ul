@@ -1,0 +1,24 @@
+void less (int x, int y)
+{
+	if (2 < 2)
+	{
+		print x;
+	}
+    else
+    {
+       if(4<2)
+       {
+           ;
+       }
+       else
+       {
+           println "eyyyy reached here";
+       }
+    }
+	print y;
+}
+
+void main()
+{
+	less(2,3);
+}

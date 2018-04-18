@@ -1,0 +1,44 @@
+// tests:
+// operators within expressions
+// basic control flow
+// variable creation and function signatures
+
+void main () {
+	string x;
+
+	x = "hey";
+	print "The factorial of 8 is ";
+}
+
+int randomMathFunction(int seed){
+	return (4*21)-123*(3+12312) + 2 * 3; 
+}
+
+int emptyargs(){
+	char c;
+	int[12312312] test;
+	float[123] yolo;
+
+	c = 'c';
+	test[153223] = 1 + 12312 * 2 - 1;
+	return test[12];
+}
+
+int controlFLow(float _underscore, int [123] var, char letter){
+	int x;
+	float y;
+	char z;
+	string s;
+	boolean b;
+	
+	if (true == false) {
+		y = 1.233;
+	} else {
+		z = '';
+	}
+
+	while (1 < 4){
+		;
+	}
+	return 123;
+} 	

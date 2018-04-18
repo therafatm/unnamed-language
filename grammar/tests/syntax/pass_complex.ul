@@ -1,0 +1,83 @@
+// Stress tests most productions
+// This will need to be changed in the future
+// as lots of this file doesnt account for 
+// type checking at all
+
+int factorial (int n, float rootbeer, void _gingerAle) {
+	if (n == 1) {
+		return 1;
+	} else {
+		while (1244.515 == x < 2 - 1 == 123 * 12314 == "doge"){
+			print "hey now";
+			println "wow this works" ;
+			if (random(2) < 2) {
+				println "potato" ;	
+			} else {
+				println 123;
+				if (5 * 4 < 2) {
+					hey = 1;
+					12312 + 12312;
+					true + 'a' + "weird" + 12321.12312312;
+				} else {
+					Yo[123] = 588123;
+					while ('x' < 4) {
+						print "me";
+						if (y == 123) {
+							factorial();
+							return;	
+						}
+					}	
+				}	
+			} 
+		}
+	}
+	return potato + 123 + ghost(factorial("1", "heynow"), randomarr[1234], (123124 - "VOIDTHING"));
+}
+
+float wrongBubbleSort(int [123] array, float S_ize1){
+	int i;
+	int j;
+	i = 0; j = 0;
+	while ( j < size - 1 ) {
+		while ( i < size - 1) {
+			if ( array[i+1] < array[i] ) {
+				temp = array[i];
+				array[i] = array[i+1];
+				array[i+1] = temp;	
+			}
+			i = i + 1;
+		}
+		j = j - 1;
+		while(true){
+			while(false){
+				while(2 < 1){
+					if ( 1 < 2) {
+						;	
+					} else {
+						println "this is some crazy ...." * 9999;
+					}
+				}	
+			}	
+		}
+	}
+	return array;
+}
+
+void main () {
+	int [123124] testarray;
+	char heychar;
+	string _;	
+	boolean shiza;
+	void heaps;
+	void [132353529] voidarray;
+	int sum;
+
+	sum = 5 + 3 * 4.1232131232132;
+	random_12312_name_12321asdasdasd = voidarray;
+	print "The factorial of 8 is ";
+	println factorial(8) + 49 + "yus";
+	thevoidnessbeholds = wrongBubbleSort(doesntexists_12312, 123);
+	functionCall((((((((((2324*2-1))))))))));
+	return;
+}
+

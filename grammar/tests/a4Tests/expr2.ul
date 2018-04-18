@@ -1,0 +1,41 @@
+int foo (int x, int y)
+{
+	int z;
+	int[12] arr;
+
+	arr[1] = 56;
+	arr[5] = 12;
+	z = x * y * 13 - arr[1] * 3 + arr[5] * factorial(4);
+	println z;
+	return z;
+}
+
+int factorial(int n)
+{
+	int returnValue;
+
+	if (n == 1)
+	{
+		returnValue = 1;
+	}
+	else
+	{
+		returnValue =  n*factorial(n-1);
+	}
+	return returnValue;
+}
+
+void main ()
+{
+	float f;
+	f = foo(2,3);
+	println f;
+	if (2 < 4 - factorial(2))
+	{
+		println "complicated expression";
+		println 4*8-factorial(3);
+	}
+	f =  4 * factorial(3) - 2 + (1*3 - factorial(2)) * 4 + factorial(factorial(3*factorial(2)));
+	println f;
+	return;
+}

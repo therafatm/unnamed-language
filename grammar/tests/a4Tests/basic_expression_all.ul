@@ -1,0 +1,110 @@
+int basic ()
+{
+	int a;
+    int b;
+    int c;
+
+    float x;
+    float y;
+    float z;
+
+    string s;
+    string t;
+
+    char f;
+    char d;
+    char e;
+
+    boolean b1;
+    boolean b2;
+
+    f = 'a';
+    d = 'b';
+
+    a = 1;
+    b = 2;
+    c = 3;
+
+    x = 1.1;
+    y = 2.2;
+    z = 3.3;
+
+    s = "hey ";
+    t = "nw ";
+
+    println "float + int";
+    y = a + y;
+    println x;
+    println "int < float";
+    b2 = y < a;
+    println b2;
+    println "int < int";
+    b2 = a < b;
+    println b2;
+
+    println "float + float";
+    x = a + b;
+    println x;
+
+    println "string + string";
+    s = s + t;
+    println s;
+
+    println "string < string";
+    b1 = s < t;
+    println b1;
+
+    println "char add";
+    e = f + d;
+    println e;
+    println "char sub";
+    e = f - d;
+    println e;
+    println "char < char";
+    b1 = f < d;
+    println b1;
+    println "char == char";
+    b2 = f == d;
+    println b2;
+
+    println "bool == bool";
+    println (b1 == b2);
+    println "bool < bool";
+    println (b1 < b2);
+
+    return 1;
+}
+
+int arrays()
+{
+	boolean [3] b_array;
+    boolean b;
+
+	int [3] i_array;
+    int i;
+
+    i = 0;
+
+    b_array[0] = false;
+    b_array[1] = true;
+    b_array[2] = false;
+
+    i_array[0] = 1;
+    i_array[1] = 2;
+    i_array[2] = 3;
+
+    println "printing b_array";
+    while (i < 3){
+        println b_array[i];
+        println i_array[i];
+        i = i + 1;
+    }
+
+    return 9;
+}
+
+void main ()
+{
+    basic();
+    arrays();
+}

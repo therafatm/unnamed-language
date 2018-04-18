@@ -1,0 +1,15 @@
+// tests variable initialization
+int test(){
+	int a = 1312312;;
+}
+
+int func(){
+	print "Hi"
+	if(true){
+		;
+	} else {
+		test();
+	}
+	char c;
+}
+

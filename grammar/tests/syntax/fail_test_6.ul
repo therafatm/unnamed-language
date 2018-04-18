@@ -1,0 +1,9 @@
+// tests formalParameter
+int sampleOne (if (x < 2) { return 1; }) {
+	if (x<y) {
+		 print "Hello";
+ 	} else {
+		print "Goodbye";
+ 	}
+ 	return x*y;
+}

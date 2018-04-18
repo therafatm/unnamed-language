@@ -1,0 +1,9 @@
+//tests array literal syntax within expression
+char func(int args [12312321]){
+	float jdkahfkdsf!@#!@$;
+}
+
+void main (int parmesanCheese){
+	println "wooooooo";
+}
+
