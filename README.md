@@ -49,7 +49,9 @@ The code generation source can be found within the  `/IR` directory, while the s
 
 ## How do you run this thing?
 
-I don't know how to run this in windows sorry. But linux and mac should work. Make sure you have a classpath sourced correctly for both ANTLR and Jasmin. You'll have to edit the `setclasspath` file to point to this directory.
+I don't know how to run this in windows sorry. If you really want to run it in windows, maybe the best thing
+to do would be to get a little docker container going running `ubuntu`, ssh in, and try and run this there.
+Linux and macOS should work though. Make sure you have the classpath sourced correctly for both ANTLR and Jasmin. You'll have to edit the `setclasspath` file to point to this directory.
 
 Then:
 -  `make`
@@ -59,6 +61,8 @@ This should print the generated JVM code to the file if successful, or write out
 This should make a class file for `filename`
 - Now you can run the program, `java filename`
 
+
+Just fyi, jasmin is an assembler for the JVM. It takes assembly-ish instructions and converts it into class files. I should've also probably added a script to do all this, but lets just push that onto the tech debt stack for now (:
 
 ## Extra Things I did
 
