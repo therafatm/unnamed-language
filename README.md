@@ -4,7 +4,7 @@ Unnamed-Language is a simplistic java like language with very basic constructs.
 This code snippet is an example of `.ul` syntax. Checkout the `language-specs` 
 document for more detailed insight into the language and its capabilities.
 
-```
+```java
 // recursive function to solve the tower of hanoi puzzles
 void towersOfHanoi(int n, char fromRod, char toRod, char auxRod)
 {
@@ -29,8 +29,8 @@ void towersOfHanoi(int n, char fromRod, char toRod, char auxRod)
 
 void main() {
     int n;
-	n = 4; // Number of disks
-	towersOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
+    n = 4; // Number of disks
+    towersOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
 }
 ```
 
