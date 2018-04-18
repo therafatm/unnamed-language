@@ -66,3 +66,9 @@ Just fyi, jasmin is an assembler for the JVM. It takes assembly-ish instructions
 ## Tests
 
 You can run the test runner `testRunnerCompiler.py` by building, and then invoking `python testRunnerCompiler.py` from within this directory. It should print out the status, and then the output of the code.
+
+## Improvements
+- Abstract ASM instructions to objects, store them, and output them instead of storing the instructions in a list raw.
+- Maybe add some liveliness analysis
+- Change grammar to accept a little more syntax (for e.g. allow for var declarations anywhere and not just the beginning, functions as first class variables, etc)
+- Refactor duplicate code
