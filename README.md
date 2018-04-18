@@ -63,9 +63,6 @@ This should make a class file for `filename`
 
 Just fyi, jasmin is an assembler for the JVM. It takes assembly-ish instructions and converts it into class files. I should've also probably added a script to do all this, but lets just push that onto the tech debt stack for now (:
 
-## Extra Things I did
+## Tests
 
-I implemented `int` as a `subtype` of `float`. So you can assign an integer to a float variable but not the converse. This also means that you can add an integer to a float, subtract an integer from a float, and mutiply an integer and a float. 
-
-You can run the test runner `testRunnerCompiler.py` by doing `make`, and then invoking `python testRunnerCompiler.py` from within this directory.
-It will print out the status, and then the output of the code.
+You can run the test runner `testRunnerCompiler.py` by building, and then invoking `python testRunnerCompiler.py` from within this directory. It should print out the status, and then the output of the code.
