@@ -72,3 +72,4 @@ You can run the test runner `testRunnerCompiler.py` by building, and then invoki
 - Maybe add some liveliness analysis
 - Change grammar to accept a little more syntax (for e.g. allow for var declarations anywhere and not just the beginning, functions as first class variables, etc)
 - Refactor duplicate code
+- This code is quite ugly. Make it less ugly.
