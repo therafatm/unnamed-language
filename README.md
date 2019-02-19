@@ -1,3 +1,7 @@
+# If you're stealing this for homework
+
+You might as well drop the class and spend the $$$ on Fels.
+
 # Unnamed-Language
 
 Unnamed-Language is a simplistic java like language with very basic constructs.
